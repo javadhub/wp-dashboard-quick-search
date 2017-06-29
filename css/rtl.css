@@ -1,0 +1,10 @@
+.wpdqs-seach-tip {
+    float: left;
+    margin: 3px 5px 0 0;
+}
+.wpdqs-search-box-btn-wrap {
+    float: right;
+}
+.wpdqs-search-box-btn-wrap .button {
+    padding: 3px 16px 3px 6px;
+}

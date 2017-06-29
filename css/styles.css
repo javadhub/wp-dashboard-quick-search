@@ -1,0 +1,124 @@
+.wpdqs-search-box-wrap {
+    height: 60px;
+    margin: 0;
+    border: 1px solid #ddd;
+    border-top: none;
+    background: #fff;
+    -webkit-box-shadow: 0 1px 1px -1px rgba(0, 0, 0, .1);
+    -moz-box-shadow: 0 1px 1px -1px rgba(0, 0, 0, .1);
+    box-shadow: 0 1px 1px -1px rgba(0, 0, 0, .1);
+    width: 240px;
+    display: none;
+}
+
+.wpdqs-seach-box-wrap-inner {
+    margin: 0;
+    padding: 16px 20px 12px;
+    position: relative;
+}
+
+.wpdqs-search-box-btn-wrap {
+    float: left;
+    height: 28px;
+    margin: -1px 0 0 0;
+    border: 1px solid #ddd;
+    background: #fff;
+    border-top: none;
+    -webkit-box-shadow: 0 1px 1px -1px rgba(0, 0, 0, .1);
+    -moz-box-shadow: 0 1px 1px -1px rgba(0, 0, 0, .1);
+    box-shadow: 0 1px 1px -1px rgba(0, 0, 0, .1);
+}
+
+.wpdqs-search-box-btn-wrap .button {
+    border: 0;
+    background: 0 0;
+    -webkit-border-radius: 0;
+    border-radius: 0;
+    color: #72777c;
+    line-height: 1.7;
+    padding: 3px 6px 3px 16px;
+    border-top: none;
+}
+
+.wpdqs-search-box-btn-wrap .button:after {
+    right: 0;
+    content: "\f140";
+    font: 400 20px/1 dashicons;
+    speak: none;
+    display: inline-block;
+    padding: 0 5px 0 0;
+    bottom: 2px;
+    position: relative;
+    vertical-align: bottom;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-decoration: none !important;
+    color: #72777c;
+}
+
+.wpdqs-search-box-btn-wrap .button.open:after {
+    content: "\f142";
+}
+
+.wpdqs-search-box-btn-wrap .button:focus {
+    border: none;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+}
+
+/* select2 */
+select.wpdqs-search-box {
+    z-index: 99999;
+}
+
+.select2-container .select2-selection--single .select2-selection__rendered {
+    width: 140px;
+}
+
+/* tooltip */
+.wpdqs-seach-tip {
+    position: relative;
+    display: inline-block;
+    float: right;
+    margin: 3px 0 0 5px;
+}
+.wpdqs-seach-tip:after {
+    content: "\f223";
+    font: 400 20px/1 dashicons;
+    color: #555;
+}
+
+.wpdqs-seach-tip span {
+    position: absolute;
+    width: 140px;
+    color: #fff;
+    background: #000;
+    height: 60px;
+    padding: 5px;
+    font-size: 11px;
+    line-height: 1.8em;
+    text-align: center;
+    visibility: hidden;
+    border-radius: 6px;
+    letter-spacing: 1px;
+}
+.wpdqs-seach-tip span:after {
+    content: '';
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    margin-left: -8px;
+    width: 0; height: 0;
+    border-bottom: 8px solid #000;
+    border-right: 8px solid transparent;
+    border-left: 8px solid transparent;
+}
+.wpdqs-seach-tip:hover span {
+    visibility: visible;
+    opacity: 0.8;
+    top: 30px;
+    left: 50%;
+    margin-left: -76px;
+    z-index: 999;
+}
